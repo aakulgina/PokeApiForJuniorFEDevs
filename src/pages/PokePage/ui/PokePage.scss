@@ -1,0 +1,61 @@
+.pokemon-card {
+    padding: 60px 120px;
+    height: 100%;
+    gap: 15px;
+    overflow: auto;
+
+    .heading, .info {
+        margin: auto;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .heading {
+        & span[role='img'] > svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        & :not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    .info {
+        & > :not(:last-child) {
+            margin-right: 50px;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            max-width: 500px;
+            text-align: justify;
+        }
+    }
+
+    .main-carousel {
+        background-color: #60596094;
+        max-width: 1024px;
+        margin: auto;
+
+        .pokemon-picture {
+            width: 500px !important;
+        }
+
+        div:has(.pokemon-picture) {
+            margin: auto;
+            width: 500px;
+        }
+    }
+
+    .stats {
+        width: 300px;
+
+        .card-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+        }
+    }
+}

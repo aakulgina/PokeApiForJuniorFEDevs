@@ -1,0 +1,15 @@
+.page__list {
+    height: 100%;
+
+    .list__container {
+        overflow: auto;
+    }
+
+    .list__item {
+        width: 100%;
+    }
+
+    .list__pagination {
+        margin: 20px 30px;
+    }
+}
