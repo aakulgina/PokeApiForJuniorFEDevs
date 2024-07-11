@@ -60,7 +60,7 @@ export function PokePage() {
             <Carousel className='main-carousel' arrows infinite>
                 {
                     pokemon.sprites.filter(item => !isNil(item)).map((img) => (
-                        <img className='pokemon-picture' src={img} />
+                        <img className='pokemon-picture' src={img as string} />
                     ))
                 }
             </Carousel>
