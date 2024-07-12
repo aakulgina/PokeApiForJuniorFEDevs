@@ -1,9 +1,9 @@
 export const links = {
-    base: '/',
+    base: '/PokeApiForJuniorFEDevs/',
 
-    failure: (code: string | number) => `/${code}`,
+    failure: (code: string | number) => `/PokeApiForJuniorFEDevs/${code}`,
 
-    list: (page?: string) => `/pokemons/list${page ? '/' + page.toString() : ''}`,
+    list: (page?: string) => `/PokeApiForJuniorFEDevs/pokemons/list${page ? '/' + page.toString() : ''}`,
 
-    card: (name: string) => `/pokemons/card/${name}`,
+    card: (name: string) => `/PokeApiForJuniorFEDevs/pokemons/card/${name}`,
 } as const;
